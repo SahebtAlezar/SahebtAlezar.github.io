@@ -1,0 +1,275 @@
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    color: #fdac2e
+}
+
+
+/********* Start Overreiding Bootstrap *******/
+
+/* Main Navbar */
+.navbar{
+    margin-bottom: 0;
+    z-index: 555;
+}
+
+.navbar button {
+    width: 45px
+}
+
+.navbar-inverse{
+    background: #ce8c3a ;/*transparent;*/
+    border: 0;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .active > a{
+    color: #fff;
+    background-color: #22241e;}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #101010;
+    float: right;
+}
+/* End Navbar */
+
+/* Start Header */
+header{
+     margin-top: -3%;
+    background: url(../image/15.jpg) no-repeat center;
+    background-size: cover;
+    position: relative;
+    min-height: 650px;
+    color: #fff;
+}
+
+.text{
+    margin: 0 auto;
+    margin-top: 17%;
+    background: rgba(0,0,0,.5);
+    padding: 40px 20px;
+    border-radius: 5px;
+}
+
+.text h1{
+    font-size: 4.2vw;
+}
+
+.text span{
+    display: block
+}
+
+/* End Header */
+
+
+/* Start Logo */
+.logo .image{
+    padding: 25px 0;
+}
+/* End Logo */
+
+/* */
+.writing{
+    text-align: left;
+    background: #f7f9fa;
+    
+}
+.writing h2,
+.writing h3{
+    text-transform: capitalize
+}
+
+.writing h2{
+    padding-top: 40px;
+    color: #fdac2e
+}
+
+
+.writing p{
+    font-size: 19px
+}
+.writing span{
+    display: block; 
+    line-height: 50px;
+    color: #2b3a42;
+    font-weight: bolder;
+    margin-bottom: 0
+}
+
+
+.writing .btn{
+    background: #fff;
+    color: #e08e19;
+    border: 1px solid;
+    margin: 20px 0 30px 0;
+    transition: 1s all ease;
+    text-transform: capitalize;
+    padding-top: 10px; 
+    padding-bottom: 10px; 
+}
+
+
+.writing .btn:hover{
+    background-color:  #e08e19;
+    color: #fff;
+    
+}
+
+.writing .col-sm-6 img{
+    height: 550px
+}
+
+/*fetuered*/
+.fetuered{
+    padding: 30px 0;
+}
+.fetuered h2{
+    color: #fdac2e;
+}
+.fetuered h3{
+    padding-top: 10px;
+    color: #2b3a42;
+    font-weight: bolder;
+}
+
+.fetuered .btn{
+    background: #fff;
+    color: #e08e19;
+    border: 1px solid;
+    margin: 20px 0;
+    transition: 1s all ease;
+    text-transform: capitalize;
+    padding: 10px 25px
+}
+
+.fetuered .btn:hover{
+    background-color:  #e08e19;
+    color: #fff;
+    
+}
+
+/*fetuered*/
+.slider{
+    background:#777;
+}
+.carousel {
+    position: relative;
+}
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev, .carousel-control .icon-next{
+    z-index: 9999
+}
+
+
+.carousel-caption {
+    position: fixed;
+    max-height: 200px;
+    margin-bottom: 190px
+}
+
+.carousel-caption {
+    right: -3%;
+    left: 50%
+}
+
+.carousel-indicators li{
+    border-color: #e08e19
+}
+
+.carousel-indicators .active {
+    background:#e08e19;
+    
+}
+/**/
+.images .col-md-4 , .col-xs-8 , .col-md-2 , .col-xs-4
+{
+  padding:0;
+}
+
+
+/************/
+.project{
+    padding: 40px;
+    background: #c1c0be
+}
+.project .col-sm-6{
+    background: #fbfbfb
+}
+
+.project .frist{
+    background: #fbfbfb
+}
+
+.project .second{
+    background: #dddddd
+}
+
+   text-align: center
+}
+
+.project .frist .btn{
+    background: #fff;
+    color: #e08e19;
+    border: 1px solid;
+    margin: 20px 0;
+    transition: 1s all ease;
+    text-transform: capitalize;
+    padding: 10px 25px
+}
+
+.project .second .btn:hover{
+    background-color:  #e08e19;
+    color: #fff;
+    
+}
+/**********/
+
+/* footer*/
+
+
+footer{
+    background: #2c3f49;
+    color: #879197
+}
+
+footer ul{
+    padding: 25px 0;
+    
+}
+
+footer ul a{
+    padding: 0 0 0 14px;
+    color: #879197;
+    text-decoration: none
+}
+
+
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+        border-color: 0;
+        float: left;
+        width: 100%;
+    }
+    
+    .project .btn-warning{
+        margin-bottom: 20px
+    }
+}
+
+@media (max-width:991px) {
+    
+    footer .text-left,
+    footer .text-right{
+        text-align: center !important;
+    }
+}
